@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Iframe Example - 3 Parts</title>
+<style>
+  body, html {
+    margin: 0; padding: 0; height: 100vh; overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  iframe {
+    border: 1px solid #ccc;
+    flex: 1;
+    height: 100vh;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <iframe srcdoc='
+    <h3 style="text-align:center;">Image Frame</h3>
+    <img src="https://m.media-amazon.com/images/M/MV5BZWFiNmRkY2MtN2ViZC00MzhhLWI0YWYtNzVlZWFmZDI3ZjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sample Image" style="display:block; margin:0 auto; max-width:90%;" />
+  ' title="Image Frame"></iframe>
+
+  <iframe srcdoc='
+    <h3>Paragraph Frame</h3>
+    <p>LESSGOOOOOOOOOOOO HAIKYUU MOVIE IS ON AND WHAT YOU WAITING FOR? GO GRAB YOUR TICKET AND SEE THE EPIC BATTLE BETWEEN THE CATS AND THE CROWS!!!</p>
+  ' title="Paragraph Frame"></iframe>
+
+  <iframe srcdoc='
+    <h3>Hyperlink Frame</h3>
+    <a href="https://haikyu.jp/" target="_blank">Official Website</a>
+  ' title="Link Frame"></iframe>
+</div>
+
+</body>
+</html>
